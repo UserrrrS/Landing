@@ -6,316 +6,468 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <img src="images/main_logo.svg" alt="">
-      <p>HOUSE WORLD</p>
-      <p>Дома и бани от новгородских мастеров</p>
-      <div>
-        <p>4,9</p>
-        <p><span>Рейтинг в Google</span> на основании 180 отзывов</p>
+    <div class="container">
+      <div class="logo_wrapper">
+        <div class="logo_group">
+          <img src="images/main_logo.svg" alt="">
+          <img src="images/House_World.svg" alt="">
+          <p class="logo_text">Дома и бани от новгородских мастеров</p>
+        </div>
+        <div class="">
+          <p class="rating">4,9</p>
+          <img src="images/Star.svg" alt="">
+          <img src="images/Star.svg" alt="">
+          <img src="images/Star.svg" alt="">
+          <img src="images/Star.svg" alt="">
+          <p class="rating_text"><span class="rating_bold">Рейтинг в Google</span> на основании 180 отзывов</p>
+        </div>
+        <div class="">
+          <button class="project_calc">Прислать проект на расчет</button>
+        </div>
+        <div class="">
+          <p class="online">Мы онлайн</p>
+        </div>
+        <div class="">
+          <p class="without_weekend">Без выходных</p>
+          <p class="number_text">7 (800) 000-00-00 </p>
+          <a class="number" href="tel:+780000000">Заказать обратный звонок</a>
+        </div>
       </div>
-      <button>Прислать проект на расчет</button>
-      <div>
-        <p>Мы онлайн</p>
+      <nav class="navigation">
+        <div class="navigation_wrapper">
+          <a href="#" class="navigation_item">Проекты</a>
+          <a href="#" class="navigation_item">Фото работ</a>
+          <a href="#" class="navigation_item">Акции</a>
+          <a href="#" class="navigation_item">Услуги</a>
+          <a href="#" class="navigation_item">Заказчику</a>
+          <a href="#" class="navigation_item">Контакты</a>
+          <a href="#" class="navigation_item">Избранное</a>
+          <a href="#" class="navigation_item">Поиск</a>
+        </div>
+      </nav>
+      <div class="">
+        <h1 class="title"><span class="title_bold">Строительство деревянных домов</span> под ключ в Курске</h1>
+        <h3 class="subtitle">Построим теплый и надежный дом <br> с гаранией 10 лет</h3>
+        <button class="calc_price">
+          Рассчитать стоимость
+        </button>
       </div>
-      <div>
-        <p>Без выходных</p>
-        <p>7 (800) 000-00-00 </p>
-        <a href="">Заказать обратный звонок</a>
-      </div>
-    </div>
-    <nav>
-      <a href="">Проекты</a>
-      <a href="">Фото работ</a>
-      <a href="">Акции</a>
-      <a href="">Услуги</a>
-      <a href="">Заказчику</a>
-      <a href="">Контакты</a>
-      <a href="">Избранное</a>
-      <a href="">Поиск</a>
-    </nav>
-    <div>
-      <h1>Строительство деревянных домов под ключ в Курске</h1>
-      <h3>Построим теплый и надежный дом <br> с гаранией 10 лет</h3>
-      <button>
-        Рассчитать стоимость
-      </button>
-    </div>
-    <div>
-      <div>
-        <img src="images/Cask.svg" alt="cask">
-        <p>40 собственных опытных бригад</p>
-      </div>
-      <div>
-        <img src="images/brush.svg" alt="brush">
-        <p>Свое производство строительных материалов</p>
-      </div>
-      <div>
-        <img src="images/Ok.svg" alt="Ok">
-        <p>Тысяча довольных клиентов с 1998 года</p>
-      </div>
-      <div>
-        <img src="images/Paper_pencil.svg" alt="Paper">
-        <p>Гарантия на все строительные работы</p>
+      <div class="four_descr">
+        <div class="descr_wrapper">
+          <img class="descr_img" src="images/Cask.svg" alt="cask">
+          <p class="descr_item">40 собственных опытных бригад</p>
+        </div>
+        <div class="descr_wrapper">
+          <img class="descr_img" src="images/brush.svg" alt="brush">
+          <p class="descr_item">Свое производство строительных материалов</p>
+        </div>
+        <div class="descr_wrapper">
+          <img class="descr_img" src="images/Ok.svg" alt="Ok">
+          <p class="descr_item">Тысяча довольных клиентов с 1998 года</p>
+        </div>
+        <div class="descr_wrapper">
+          <img class="descr_img" src="images/Paper_pencil.svg" alt="Paper">
+          <p class="descr_item">Гарантия на все строительные работы</p>
+        </div>
       </div>
     </div>
   </header>
 
-  <section>
-    <div>
-      <p>Рассчитайте предварительную стоимость дома за 1 минуту</p>
-      <p>Что будем строить?</p>
-      <img src="images/House_1.png" alt="House">
-      <p>Дом</p>
-      <img src="images/bathhouse_1.png" alt="Bathhouse">
-      <p>Баня</p>
-      <p>Нажимайте на вариант ответа <br>
-        и переходите к следующему вопросу</p>
-      <button>Далее</button>
-      Ведущий архитектор
-      <p>Ответив на вопросы вы получите:</p>
-    </div>
-    <div>
-      <h3>Михаил Иванов</h3>
-      <img src="images/man_1.png" alt="Mikl">
-      <p>Ведущий архитектор</p>
-      <p>Ответив на вопросы <span>вы получите:</span></p>
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h2>Мы строим деревянные дома и бани с учетом всех особенностей Курска</h2>
-      <div>Каркасные дома</div>
-      <div>Перевозные бани</div>
-      <div>Дома из бруса</div>
-      <div>Бани из бруса</div>
-      <div>Срубы под усадку</div>
-      <div>Срубы под усадку</div>
-      <div>Каркасные бани</div>
+  <section class="cost">
+    <div class="container">
+      <div class="cost_wrapper">
+        <h2><span class="blc_text">Рассчитайте предварительную стоимость</span> дома за 1 минуту</h2>
+        <p class="cost_question">Что будем строить?</p>
+        <div class="cost_box">
+          <div class="cost_card">
+            <img src="images/House_1.png" alt="House">
+            <p class="cost_name">Дом</p>
+          </div>
+          <div class="cost_card">
+            <img src="images/bathhouse_1.png" alt="Bathhouse">
+            <p class="cost_name">Баня</p>
+          </div>
+        </div>
+        <p>Нажимайте на вариант ответа <br>
+          и переходите к следующему вопросу</p>
+        <button>Далее</button>
+        Ведущий архитектор
+        <p>Ответив на вопросы вы получите:</p>
+      </div>
+      <div>
+        <img src="images/man_1.png" alt="Mike">
+        <p class="cost_man">Михаил Иванов</p>
+        <p class="cost_name_descr">Ведущий архитектор</p>
+        <p class="cost_answer">Ответив на вопросы <span class="">вы получите:</span></p>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2> Посмотрите популярные проекты домов </h2>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
+  <section class="houses">
     <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
-    </div>
-    <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
-    </div>
-    <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
-    </div>
-    <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
-    </div>
-    <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
-    </div>
-    <div>
-      <img src="images/AtamanHouse.png" alt="AtamanHouse">
-      <h4>Атаман</h4>
-      <p>Площадь</p>
-      <p>Размеры</p>
-      <p>Срок стройки</p>
-      <p>Комнат</p>
-      <p>Тип дома</p>
-      <p>Стоимость</p>
+      <div class="container">
+        <h2><span class="blc_text">Мы строим деревянные дома и бани</span> с учетом всех особенностей Курска</h2>
+        <div class="houses_card">
+          <h3>Каркасные дома</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3>Перевозные бани</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3> Дома из бруса</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3>Бани из бруса</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3>Срубы под усадку</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3>Срубы под усадку</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+        <div class="houses_card">
+          <h3>Каркасные бани</h3>
+          <button class="houses_btn">смотреть проекты</button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div>
-      <h2>Ваш идеальный дом всего за 6 часов</h2>
-      <button>Этап 1</button>
-      <button>Этап 2</button>
-      <button>Этап 3</button>
-      <button>Этап 4</button>
-      <button>Этап 5</button>
-      <button>Этап 6</button>
+  <section class="ataman">
+    <div class="container">
+      <h2 class="blc_text"> Посмотрите популярные проекты домов </h2>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
+      <div>
+        <img src="images/AtamanHouse.png" alt="AtamanHouse">
+        <h3>Атаман</h3>
+        <p class="ataman_text">Площадь</p>
+        <p class="ataman_text">Размеры</p>
+        <p class="ataman_text">Срок стройки</p>
+        <p class="ataman_text">Комнат</p>
+        <p class="ataman_text">Тип дома</p>
+        <p class="ataman_text">Стоимость</p>
+        <button class="ataman_btn">смотреть проекты</button>
+      </div>
     </div>
-    <div class="">
-      <img src="images/PresentationHouse.png" alt="Presentation">
-      <h3>Согласование вашего проекта</h3>
+  </section>
+
+  <section class="perfect">
+    <div class="container">
+      <div class="perfect_wrapper">
+        <h2>Ваш <span class="blc_text">идеальный дом</span> всего за 6 часов</h2>
+        <button class="perfect_btn">
+          <p>Этап 1</p>
+        </button>
+        <button class="perfect_btn">
+          <p>Этап 2</p>
+        </button>
+        <button class="perfect_btn">
+          <p>Этап 3</p>
+        </button>
+        <button class="perfect_btn">
+          <p>Этап 4</p>
+        </button>
+        <button class="perfect_btn">
+          <p>Этап 5</p>
+        </button>
+        <button class="perfect_btn">
+          <p>Этап 6</p>
+        </button>
+      </div>
+      <div class="">
+        <img src="images/PresentationHouse.png" alt="Presentation">
+        <div class="perfect_check">
+          <span class="title_text">Согласование вашего проекта</span>
+          <div class="">
+            <img src="images/check.svg" alt="">
+            <p class="perfect_text">Выбор коттеджа</p>
+            <img src="images/check.svg" alt="">
+            <p class="perfect_text">Расчет стоимости</p>
+            <img src="images/check.svg" alt="">
+            <p class="perfect_text">Утверждение планировки</p>
+          </div>
+          <div class="perfect_info">
+            <img src="images/Info.svg" alt="info">
+            <p class="perfect_step">Первый этап <span class="perfect_blc">помогает вам узнать
+                преимущества работы с нами</span>
+              и ни к чему вас не обязывает</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Акции и подарки для каждой семьи</h2>
-    <p>Любая перепланировка в подарок!</p>
-    <p>Рыбатекст используется дизайнерами,
-      проектировщиками и фронтендерами,
-      когда нужно выстро заполнить макеты
-      или прототипы содержимым.</p>
-    <button>перейти к акции</button>
+  <section class="gift">
+    <div class="container">
+      <h2><span class="blc_text">Акции и подарки</span> для каждой семьи</h2>
+      <div class="gift_card">
+        <h3 class="gift_title">Любая перепланировка в подарок!</h3>
+        <p class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
+          <span class="wht_text">проектировщиками</span> и фронтендерами,
+          когда нужно выстро заполнить <span class="wht_text">макеты</span>
+          или прототипы содержимым.
+        </p>
+        <button class="gift_btn">перейти к акции</button>
+      </div>
+      <div class="gift_card">
+        <h3 class="gift_title">Любая перепланировка в подарок!</h3>
+        <p class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
+          <span class="wht_text">проектировщиками</span> и фронтендерами,
+          когда нужно выстро заполнить <span class="wht_text">макеты</span>
+          или прототипы содержимым.
+        </p>
+        <button class="gift_btn">перейти к акции</button>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Посмотрите дома, построенные нами за прошлый год</h2>
-    <h3>Дом из сруба “Атаман” в Пестово</h3>
-    <p>Стоимость строительства</p>
-    <p>Сроки строительства</p>
-    <p>Общая Площадь</p>
-    <p>Площадь</p>
-    <p>Размеры</p>
-    <p>Тип работ</p>
-    <p>Срок стройки</p>
-    <p>Комнат</p>
-    <p>Фундамент</p>
-    <p>Понравился дом? Рассчитайте стоимость в калькуляторе</p>
-    <button>Рассчитать стоимость</button>
+  <section class="look">
+    <div class="container">
+      <h2><span class="blc_text">Посмотрите</span> дома, построенные нами за прошлый год</h2>
+      <div class="look_wrapper">
+        <span class="title_text">Дом из сруба “Атаман” в Пестово</span>
+        <p class="look_info">Стоимость строительства</p>
+        <p class="look_info">Сроки строительства</p>
+        <p class="look_info">Общая Площадь</p>
+        <p class="look_descr">Площадь</p>
+        <p class="look_descr">Размеры</p>
+        <p class="look_descr">Тип работ</p>
+        <p class="look_descr">Срок стройки</p>
+        <p class="look_descr">Комнат</p>
+        <p class="look_descr">Фундамент</p>
+        <p class="look_descr"><span class="look_silver">Понравился дом?</span> Рассчитайте стоимость в калькуляторе</p>
+        <button>Рассчитать стоимость</button>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Запишитесь на бесплатную экскурсию по строящимся объектам</h2>
-    <p>На экскурсии вы сможете пообщаться с прорабом и строителями, а также:</p>
-    <p>Познакомитесь с технологией строительства</p>
-    <p>Оцените качество материалов на стройплощадке</p>
-    <p>Зададите вопросы руководителю строительства</p>
-    <form>
-      <input type="date" name="date">
-      <input type="phone" name="phone" placeholder="+7">
-    </form>
-    <button>Записаться на экскурсию</button>
-  </section>
-
-  <section>
-    <h2>Скачайте каталог
-      проектов с ценами
-      и планировками</h2>
-    <div class="">
-      <p>Скачайте каталог
-        топовых проектов</p>
-      <p>Мы вышлем подборку
-        вам в мессенджер</p>
-      <p>Куда отправить подборку?</p>
-      <form action="">
+  <section class="free">
+    <div class="container">
+      <h2>Запишитесь на <span class="blc_text">бесплатную экскурсию</span> по строящимся объектам</h2>
+      <p class="free_text">На экскурсии вы сможете пообщаться с прорабом и строителями, а также:</p>
+      <p class="free_descr"><span class="free_blc">Познакомитесь</span> с технологией строительства</p>
+      <p class="free_descr"><span class="free_blc">Оцените</span> качество материалов на стройплощадке</p>
+      <p class="free_descr"><span class="free_blc">Зададите</span> вопросы руководителю строительства</p>
+      <form>
+        <input type="date" name="date">
         <input type="phone" name="phone" placeholder="+7">
       </form>
-      <button>Получить каталог проектов</button>
+      <button class="free_btn">Записаться на экскурсию</button>
     </div>
-
   </section>
 
-  <section>
-    <h2>Более 200 отзывов от наших клиентов</h2>
-  </section>
-
-  <section>
-    <img src="images/Oleg.png" alt="OlegSoloviev">
-    <h2>Здравствуйте,
-      я Олег Соловьев,
-      директор и основатель
-      компании.</h2>
-    <p>На рынке строительных услуг мы уже 14 лет. за это время нам удалось
-      сформировать сплоченный коллектив специалистов с более
-      чем двадцатилетним стажем. Вместе с тем я слежу за тем,
-      чтобы наши специалисты оставались в курсе последних
-      технологий, совершенствовали свои навыки.</p>
-  </section>
-
-  <section>
-    <h2>Мы готовы ответить
-      на любой вопрос</h2>
-    <p>Рыбатекст используется дизайнерами,
-      проектировщиками и фронтендерами,
-      когда нужно выстро заполнить макеты
-      или прототипы содержимым.</p>
-  </section>
-
-  <section>
-    <div class="">
-      <h2>Если у вас уже есть
-        смета на строительство
-        в 95% случаев мы предлагаем
-        меньшую стоимость
-        и без потери качества</h2>
-      <p>Как мы этого добиваемся?</p>
-    </div>
-    <div class="">
-      <h4>Просто прикрепите
-        готовую смету и вы узнаете,
-        как сэкономить на стройке</h4>
-      <p>Инженер-сметчик рассчитает стоимость
-        работ и материалов по оптовым ценам</p>
-      <form action="">
-        <input type="">
+  <section class="download">
+    <div class="container">
+      <h2><span class="blc_text">Скачайте каталог
+          проектов</span> с ценами
+        и планировками</h2>
+      <div class="download_wrapper">
+        <p class="download_title"><span>Скачайте каталог</span>
+          топовых проектов</p>
+        <p>Мы вышлем подборку
+          вам в мессенджер</p>
         <p>Куда отправить подборку?</p>
-        <input type="phone" name="phone" placeholder="+7">
-      </form>
-      <button>Получить смету</button>
+        <form action="">
+          <input type="phone" name="phone" placeholder="+7">
+        </form>
+        <button class="download_btn">Получить каталог проектов</button>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h4>Наши контакты</h4>
-    <h4>Приезжайте к нам в офис</h4>
-    <button>Рассчитать стоимость</button>
+  <section class="reviews">
+    <div class="container">
+      <h2><span class="blc_text">Более 200 отзывов</span> от наших клиентов</h2>
+    </div>
+  </section>
+
+  <section class="ceo">
+    <div class="container">
+      <img src="images/Oleg.png" alt="OlegSoloviev">
+      <div class="ceo_wrapper">
+        <h2><span class="blc_text">Здравствуйте,
+            я Олег Соловьев,</span>
+          директор и основатель
+          компании.</h2>
+        <p>На рынке строительных услуг мы уже 14 лет. за это время нам удалось
+          сформировать сплоченный коллектив специалистов с более
+          чем двадцатилетним стажем. Вместе с тем я слежу за тем,
+          чтобы наши специалисты оставались в курсе последних
+          технологий, совершенствовали свои навыки.</p>
+        <div class="ceo_info">
+          <p><span class="ceo_number">10</span> лет компания на рынке</p>
+          <p><span class="ceo_number">200</span> + объектов построено</p>
+          <p><span class="ceo_number">5</span> лет гарантия работы</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ready">
+    <div class="container">
+      <div class="ready_wrapper">
+        <h2>Мы готовы ответить
+          на <span class="blc_text">любой вопрос</span></h2>
+        <p>Рыбатекст используется дизайнерами,
+          <span>проектировщиками</span> и фронтендерами,
+          когда нужно выстро заполнить <span>макеты</span>
+          или прототипы содержимым.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="estimate">
+    <div class="container">
+      <div class="estimate_title">
+        <h2><span class="blc_text">Если у вас уже есть
+            смета на строительство</span>
+          в 95% случаев мы предлагаем
+          меньшую стоимость
+          и без потери качества</h2>
+        <p>Как мы этого добиваемся?</p>
+        <div class="estimate_descr">
+          <img src="images/check.svg" alt="check">
+          <span>Оптовые скидки</span> на проверенные материалы
+          от партнеров (эномоия до 30%)
+        </div>
+        <div class="estimate_descr">
+          <img src="images/check.svg" alt="check">
+          <span>Оптимальный подбор</span> материалов
+          и поставщиков (экономия до 15%)
+        </div>
+        <div class="estimate_descr">
+          <img src="images/check.svg" alt="check">
+          <span>Налаженный рабочий процесс</span> без потери
+          времени (экономия до 20%)
+        </div>
+      </div>
+      <div class="estimate_profit">
+        <p>Просто прикрепите
+          готовую смету и вы узнаете,
+          как сэкономить на стройке</p>
+        <p>Инженер-сметчик рассчитает стоимость
+          работ и материалов по оптовым ценам</p>
+        <form action="">
+          <input type="">
+          <p>Куда отправить подборку?</p>
+          <input type="phone" name="phone" placeholder="+7">
+        </form>
+        <button class="estimate_btn">Получить смету</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts_info">
+        <p class="contacts_title">Наши контакты</p>
+        <div>
+          <img src="images/geo.svg" alt="#">
+          г. Москва, улица Рубинштейна, 43
+        </div>
+        <p class="without_weekend">Без выходных с 10:00 до 20:00</p>
+        <p class="number_text">7 (800) 000-00-00 </p>
+        <a class="number" href="tel:+780000000">Заказать обратный звонок</a>
+        <p class="online">Мы онлайн</p>
+        <button class="project_calc">Прислать проект на расчет</button>
+      </div>
+      <p class="contacts_title">Приезжайте к нам в офис</p>
+
+    </div>
   </section>
 
   <footer>
     <nav>
-      <a href="">Проекты</a>
-      <a href="">Фото работ</a>
-      <a href="">Акции</a>
-      <a href="">Услуги</a>
-      <a href="">Заказчику</a>
-      <a href="">Контакты</a>
-      <a href="">Избранное</a>
-      <a href="">Поиск</a>
+      <a href="№" class="navigation_item">Проекты</a>
+      <a href="№" class="navigation_item">Фото работ</a>
+      <a href="№" class="navigation_item">Акции</a>
+      <a href="№" class="navigation_item">Услуги</a>
+      <a href="№" class="navigation_item">Заказчику</a>
+      <a href="№" class="navigation_item">Контакты</a>
+      <a href="№" class="navigation_item">Избранное</a>
+      <a href="№" class="navigation_item">Поиск</a>
     </nav>
-    <p>Все права защищены</p>
-    <a href="">Политика обработки персональных данных</a>
+    <p class="rights">Все права защищены</p>
+    <a href="" class="politics">Политика обработки персональных данных</a>
   </footer>
-  <button>123<img src="" alt=""></button>
 </body>
 
 </html>

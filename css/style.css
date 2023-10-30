@@ -11,6 +11,10 @@ header {
   min-height: 803px;
 }
 
+body {
+  background: #F5F6FA;
+}
+
 h2 {
   color: #2D2D2F;
   font-family: 'Open Sans', sans-serif;
@@ -50,9 +54,14 @@ h3 {
 }
 
 /* Селекторы по классу */
+
 .container {
   max-width: 1437px;
   margin: 0 auto;
+}
+
+.logo_group {
+  display: flex;
 }
 
 .logo_wrapper {
@@ -277,6 +286,214 @@ h3 {
   line-height: 12px;
 }
 
+.house {
+  display: grid;
+}
+
+.houses h2 {
+  text-align: center;
+}
+
+/* .houses_cardwrap {
+  display: flex;
+  justify-content: center;
+} */
+
+.houses_table {
+  display: grid;
+  grid-template-rows: repeat(3, 161fpx);
+  justify-content: center;
+  gap: 31px;
+  margin-top: 41px;
+}
+
+.houses_card {
+  width: 348px;
+  height: 161px;
+}
+
+.houses_wrapper {
+  display: flex;
+}
+
+.houses_projects {
+  display: flex;
+  width: 76px;
+  height: 25px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 9px;
+  background-color: white;
+  border-radius: 12.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h3 {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 29.257px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.houses_price {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.houses_price span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.houses_btnwrap {
+  display: flex;
+  margin-left: 44px;
+  flex-direction: column;
+  margin-top: 121px;
+}
+
+
+
+.houses_card_1,
+.houses_card_7 {
+  background: url("../images/House_2.png") center center/cover no-repeat;
+  height: 351px;
+
+}
+
+.houses_card_1 .houses_wrapper,
+.houses_card_7 .houses_wrapper {
+  margin: 45px 39px 0 44px;
+}
+
+
+.houses_card_2 .houses_wrapper,
+.houses_card_3 .houses_wrapper,
+.houses_card_4 .houses_wrapper,
+.houses_card_5 .houses_wrapper,
+.houses_card_6 .houses_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 29px 40px 0 33px;
+}
+
+
+.houses_card_2 h3,
+.houses_card_3 h3,
+.houses_card_4 h3,
+.houses_card_5 h3,
+.houses_card_6 h3 {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  /* 97.019% */
+}
+
+.houses_btnwrap_small {
+  display: flex;
+  margin: 28px 0 0 21px;
+
+
+}
+
+
+.houses_btnwrap_small span {
+  font-size: 23.061px;
+  font-weight: 700;
+  line-height: 23.061px;
+}
+
+.houses_btnwrap_small .houses_btn {
+  display: flex;
+  margin-right: 13px;
+  width: 132px;
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.houses_price_small {
+  padding-top: 20px;
+}
+
+.houses_card_2,
+.houses_card_3,
+.houses_card_4,
+.houses_card_5,
+.houses_card_6 {
+  height: 161px;
+}
+
+.houses_card_1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.houses_card_2 {
+  background: url(../images/bathhouse_2.png) center center/cover no-repeat;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.houses_card_3 {
+  background: url(../images/House_3.png) center center/cover no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+}
+
+.houses_card_4 {
+  background: url(../images/bathhouse_3.png) center center/cover no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.houses_card_5 {
+  background: url(../images/House_4.png) center center/cover no-repeat;
+  grid-column: 2 /3;
+  grid-row: 3 / 4;
+}
+
+.houses_card_6 {
+  background: url(../images/House_5.png);
+  grid-row: 3 / 4;
+  grid-row: 1 / 2;
+
+}
+
+.houses_card_7 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
+.houses_card_5 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.houses_card_2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
 .houses_btn {
   color: #FCFCFE;
   font-family: 'Open Sans', sans-serif;
@@ -290,6 +507,116 @@ h3 {
   height: 40px;
   border-radius: 4px;
   background: #73B918;
+  margin-top: 11px;
+}
+
+.ataman {
+  margin-top: 120px;
+}
+
+.ataman_slider {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center
+}
+
+.ataman_item {
+  display: flex;
+  margin: 0 10px 0 0;
+  width: 149px;
+  height: 24px;
+  border-radius: 4px;
+  background: #EFEFEF;
+  border: none;
+  color: #5C5F66;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  flex-shrink: 0;
+  font-weight: 400;
+  line-height: 13.375px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ataman_arrow {
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ataman_arrow-rotate {
+  transform: rotate(180deg);
+  margin-right: 48px;
+}
+
+.ataman_hyper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ataman_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F7D047;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13px;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+
+.ataman_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ataman_text_wrapper {
+  margin: 0 31px 0 31px;
+}
+
+.ataman_card {
+  margin-bottom: 24px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.256);
+}
+
+
+
+.ataman_card {
+  margin-right: 26px;
+  width: 350px;
+  min-height: 505px;
+  border: 1px solid #fff;
+  border-radius: 13px;
+  background: #FFF;
+}
+
+.ataman_card h3 {
+  margin: 28px 0 16px 0;
+}
+
+.ataman_descr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.ataman_descr span {
+  color: #7A7D81;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.219px;
 }
 
 .ataman h3 {
@@ -303,7 +630,40 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
+
 }
+
+.ataman_text_mbt {
+  margin-bottom: 8.4px;
+}
+
+.ataman_text-mrg:first-child {
+  margin-bottom: 22px;
+}
+
+.ataman_text_subtext {
+  display: flex;
+  color: #5C5F66;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.219px;
+  justify-content: end;
+}
+
+.ataman_text_subtext span {
+  display: flex;
+  color: #73B918;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 31.58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31.58px;
+  align-items: start;
+  margin-top: -14px
+}
+
 
 .ataman_btn {
   color: #FCFCFE;
@@ -319,6 +679,28 @@ h3 {
   border-radius: 4px;
   background: #FEAA01;
   border: none;
+}
+
+.ataman_btn_grp {
+  display: flex;
+  margin-top: 21px;
+  justify-content: space-between;
+}
+
+.ataman_check {
+  width: 8.7px;
+  height: 8.7px;
+  margin: 14.9px 8.7px 0 14px;
+}
+
+.ataman_individ {
+  color: #B8B8BA;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 8.666px;
+  margin-top: 11px;
 }
 
 .perfect_btn {

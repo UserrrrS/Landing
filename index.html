@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mixins.css">
 </head>
 
 <body>
@@ -466,43 +467,178 @@
   <section class="gift">
     <div class="container">
       <h2><span class="blc_text">Акции и подарки</span> для каждой семьи</h2>
-      <div class="gift_card">
-        <h3 class="gift_title">Любая перепланировка в подарок!</h3>
-        <p class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
-          <span class="wht_text">проектировщиками</span> и фронтендерами,
-          когда нужно выстро заполнить <span class="wht_text">макеты</span>
-          или прототипы содержимым.
-        </p>
-        <button class="gift_btn">перейти к акции</button>
-      </div>
-      <div class="gift_card">
-        <h3 class="gift_title">Любая перепланировка в подарок!</h3>
-        <p class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
-          <span class="wht_text">проектировщиками</span> и фронтендерами,
-          когда нужно выстро заполнить <span class="wht_text">макеты</span>
-          или прототипы содержимым.
-        </p>
-        <button class="gift_btn">перейти к акции</button>
+      <div class="gift_card_wrapper">
+        <div class="gift_card gift_card_1">
+          <div class="gift_card_box">
+            <h3 class="gift_title">Любая перепланировка <br>в подарок!</h3>
+            <p class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
+              <span class="wht_text">проектировщиками</span> и фронтендерами,
+              когда нужно выстро заполнить <span class="wht_text">макеты</span>
+              или прототипы содержимым.
+            </p>
+            <button class="gift_btn">перейти к акции</button>
+          </div>
+        </div>
+        <div class="gift_card gift_card_2">
+          <div class="gift_card_box">
+            <h3 class="gift_title">Металлическая
+              дверб <br>в подарок!</h3>
+            <div class="gift_text_flex">
+              <div class="gift_text"><span class="wht_text">Рыбатекст</span> используется дизайнерами,
+                <span class="wht_text">проектировщиками</span> и фронтендерами,
+                когда нужно выстро заполнить <span class="wht_text">макеты</span>
+                или прототипы содержимым.
+              </div>
+              <div class="gift_discount">
+                <div class="gift_sun">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <g filter="url(#filter0_d_40_463)">
+                      <circle cx="11.0359" cy="10.7569" r="4.3482" fill="#F5BA40" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_40_463" x="0.687744" y="0.408691" width="20.6964" height="20.6963"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="3" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.36 0 0 0 0 0 0 0 0 1 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_40_463" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_40_463" result="shape" />
+                      </filter>
+                </div>
+                <span>15</span>%
+                <p>Скидка</p>
+              </div>
+            </div>
+            <button class="gift_btn">перейти к акции</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="look">
     <div class="container">
-      <h2><span class="blc_text">Посмотрите</span> дома, построенные нами за прошлый год</h2>
-      <div class="look_wrapper">
-        <span class="title_text">Дом из сруба “Атаман” в Пестово</span>
-        <p class="look_info">Стоимость строительства</p>
-        <p class="look_info">Сроки строительства</p>
-        <p class="look_info">Общая Площадь</p>
-        <p class="look_descr">Площадь</p>
-        <p class="look_descr">Размеры</p>
-        <p class="look_descr">Тип работ</p>
-        <p class="look_descr">Срок стройки</p>
-        <p class="look_descr">Комнат</p>
-        <p class="look_descr">Фундамент</p>
-        <p class="look_descr"><span class="look_silver">Понравился дом?</span> Рассчитайте стоимость в калькуляторе</p>
-        <button>Рассчитать стоимость</button>
+      <h2 class="look_title"><span class="blc_text">Посмотрите</span> дома, построенные нами за прошлый год</h2>
+      <div class="look_group">
+        <div class="look_box">
+          <div class="look_card_big"></div>
+          <div class="look_card_small look_card_small_1"></div>
+          <div class="look_card_small look_card_small_2"></div>
+          <div class="look_card_small look_card_small_3"></div>
+          <div class="look_card_small look_card_small_4"></div>
+        </div>
+        <div class="look_wrapper">
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.72111 18.7167C10.207 17.9571 16.5078 14.378 16.5078 8.30317C16.5078 3.76438 12.8822 0.0849609 8.40987 0.0849609C3.93751 0.0849609 0.311951 3.76438 0.311951 8.30317C0.311951 14.378 6.6127 17.9571 8.09863 18.7167C8.29689 18.8181 8.52285 18.8181 8.72111 18.7167ZM8.40989 11.8252C10.3266 11.8252 11.8804 10.2483 11.8804 8.30312C11.8804 6.35792 10.3266 4.78103 8.40989 4.78103C6.49317 4.78103 4.93935 6.35792 4.93935 8.30312C4.93935 10.2483 6.49317 11.8252 8.40989 11.8252Z"
+                fill="#85B73E" />
+            </svg>
+            <a href="#" class="look_show_btn">Показать на карте</a>
+          </div>
+          <div class="title_text">Дом из сруба “Атаман” в Пестово</div>
+
+          <div class="look_price">
+            <div class="look_info_wrapper">
+              <svg class="look_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                fill="none">
+                <g filter="url(#filter0_d_42_30)">
+                  <circle cx="10.3482" cy="10.3482" r="4.3482" fill="#F5BA40" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_42_30" x="0" y="0" width="20.6964" height="20.6963" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.36 0 0 0 0 0 0 0 0 1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_42_30" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_42_30" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+              <p class="look_info">Стоимость строительства:</p>
+              <p><span>1 780 000</span> руб.</p>
+            </div>
+
+            <div class="look_info_wrapper">
+              <svg class="look_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                fill="none">
+                <g filter="url(#filter0_d_42_30)">
+                  <circle cx="10.3482" cy="10.3482" r="4.3482" fill="#F5BA40" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_42_30" x="0" y="0" width="20.6964" height="20.6963" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.36 0 0 0 0 0 0 0 0 1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_42_30" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_42_30" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+              <p class="look_info">Сроки строительства:</p>
+              <p><span>35</span> дней.</p>
+            </div>
+
+            <div class="look_info_wrapper">
+              <svg class="look_svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                fill="none">
+                <g filter="url(#filter0_d_42_30)">
+                  <circle cx="10.3482" cy="10.3482" r="4.3482" fill="#F5BA40" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_42_30" x="0" y="0" width="20.6964" height="20.6963" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.36 0 0 0 0 0 0 0 0 1 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_42_30" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_42_30" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+              <p class="look_info">Общая площадь</p>
+              <p><span>120</span> м.кв.</p>
+            </div>
+          </div>
+          <div class="look_descr_wrapper">
+            <div class="look_descr_box look_descr_box-1">
+              <p class="look_descr">Площадь: <span>120кв.м</span></p>
+              <p class="look_descr">Размеры: <span>7х9</span></p>
+              <p class="look_descr">Тип работ: <span>Под ключ</span></p>
+            </div>
+            <div class="look_descr_box">
+              <p class="look_descr"><span>Срок стройки: 16 дней</span></p>
+              <p class="look_descr"><span>Комнат: 5</span></p>
+              <p class="look_descr"><span>Фундамент: Монолитная плита</span></p>
+            </div>
+          </div>
+          <div class="look_price_mg">
+            <div class="look_descr"><span class="look_silver">Понравился дом?</span> Рассчитайте стоимость в
+              калькуляторе
+            </div>
+            <div class="look_descr">
+              <button class="look_btn">Рассчитать стоимость</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

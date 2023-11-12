@@ -56,7 +56,7 @@ h3 {
 /* Селекторы по классу */
 
 .container {
-  max-width: 1437px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -301,7 +301,7 @@ h3 {
 
 .houses_table {
   display: grid;
-  grid-template-rows: repeat(3, 161fpx);
+  grid-template-rows: repeat(3, 161px);
   justify-content: center;
   gap: 31px;
   margin-top: 41px;
@@ -734,6 +734,37 @@ h3 {
   line-height: 17Px;
 }
 
+
+
+.gift {
+  margin-top: 122px;
+}
+
+.gift_card_wrapper {
+  display: flex;
+  margin-top: 41px;
+  justify-content: space-around;
+}
+
+.gift_card {
+  width: 533px;
+  height: 296px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.gift_card_box {
+  padding-left: 43px;
+}
+
+.gift_card_1 {
+  background-image: url(../images/Present_1.png);
+}
+
+.gift_card_2 {
+  background-image: url(../images/Present_2.png);
+}
+
 .gift_title {
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
@@ -741,15 +772,56 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 26px;
+  margin-top: 47px;
 }
 
 .gift_text {
+  width: 257px;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 15px;
+  margin-top: 19px;
+}
+
+.gift_text_flex {
+  display: flex;
+  min-width: 430px;
+}
+
+.gift_discount {
+  position: relative;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 80px;
+  height: 62px;
+  border-radius: 26.089px 0px 27.332px 0px;
+  background: rgba(76, 79, 86, 0.50);
+  margin-left: 92px;
+  margin-top: 19px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.gift_discount span {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 34.369px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36.593px;
+}
+
+.gift_sun {
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .gift_btn {
@@ -764,6 +836,8 @@ h3 {
   height: 43.482px;
   border-radius: 5px;
   background: #FFF;
+  margin-top: 28px;
+  border: none;
 }
 
 .title_text {
@@ -773,6 +847,87 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 36.903px;
+  margin-top: 15px;
+}
+
+.look {
+  margin-top: 132px;
+}
+
+
+
+.look_group {
+  display: flex;
+  margin-top: 50px;
+}
+
+.look_box {
+  display: grid;
+  grid-template-columns: repeat(4, 133px);
+  grid-template-rows: repeat(5, 86px);
+  align-items: center;
+  justify-content: center;
+  column-gap: 3.3px;
+  row-gap: 3px;
+}
+
+.look_card_big {
+  background: url(../images/Ataman_Pestovo.png) center center/cover no-repeat;
+  width: 534px;
+  height: 346px;
+  grid-row: 1 / 5;
+  grid-column: 1 / 6;
+}
+
+.look_card_small {
+  background: url(../images/look.jpg) center center/cover no-repeat;
+  width: 125px;
+  height: 79px;
+  border-radius: 5px;
+}
+
+.look_wrapper {
+  margin-left: 31px;
+}
+
+.look_card_small_1 {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+
+.look_card_small_2 {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+}
+
+.look_card_small_3 {
+  grid-row: 5 / 6;
+  grid-column: 3 / 4;
+}
+
+.look_card_small_4 {
+  grid-row: 5 / 6;
+  grid-column: 4 / 5;
+}
+
+.look_price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.look_svg,
+.look_info {
+  margin-bottom: 10px;
+}
+
+.look_info_wrapper span {
+  color: #434749;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.683px;
 }
 
 .look_info {
@@ -784,6 +939,20 @@ h3 {
   line-height: 13.222px;
 }
 
+.look_show_btn {
+  color: #85B73E;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17.778px;
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
 .look_descr {
   color: #56595F;
   font-family: 'Open Sans', sans-serif;
@@ -793,6 +962,24 @@ h3 {
   line-height: 18.837px;
 }
 
+.look_descr_wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.look_descr_box span {
+  color: #56595F;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18.837px;
+}
+
+.look_descr_box-1 {
+  margin-right: 53px;
+}
+
 .look_silver {
   color: #56595F;
   font-family: 'Open Sans', sans-serif;
@@ -800,6 +987,25 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: 18.837px;
+}
+
+.look_price_mg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.look_btn {
+  background-color: #FEAA01;
+  width: 233px;
+  height: 43px;
+  border-radius: 5px;
+  border: none;
+  color: #FCFCFE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17.278px;
 }
 
 .free_text {
